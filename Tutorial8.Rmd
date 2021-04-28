@@ -82,5 +82,21 @@ France <- worldwidecases %>%
 
 \section*{Country XX3 and YY3}
 
+```{r load-the-data, include = FALSE }
+# Load the data
+cases <- read_csv("Data/worldwidecases.csv")
+```
+
+```{r}
+china <- cases %>% 
+  filter(countriesAndTerritories == "China")
+
+australia <- cases %>% 
+  filter(countriesAndTerritories == "Australia")
+
+china
+australia
+```
+
 
 
