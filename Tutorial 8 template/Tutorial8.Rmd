@@ -64,6 +64,7 @@ barbados_cases %>%
 ```
 This is the data
 
+Why am i NOT VISIBLE
 \section*{Country XX2 and YY2}
 
 \section*{Country XX3 and YY3}
