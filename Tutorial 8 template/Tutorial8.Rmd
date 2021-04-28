@@ -62,7 +62,7 @@ barbados_cases <- worldwide_cases %>%
 barbados_cases %>%
   ggplot(aes(x=month,y=n)) + geom_line()
 ```
-
+This is the data
 
 \section*{Country XX2 and YY2}
 
