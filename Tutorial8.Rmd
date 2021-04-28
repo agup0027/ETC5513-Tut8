@@ -54,5 +54,12 @@ library(bookdown)
 
 \section*{Country XX3 and YY3}
 
+```{r load-the-data, include = FALSE }
+# Load the data
+cases <- read_csv("Data/worldwidecases.csv")
+```
 
+```{r}
+china_cass <- cases %>% 
+  filter(countriesAndTerritories == "China")
 
