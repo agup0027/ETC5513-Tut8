@@ -60,6 +60,15 @@ cases <- read_csv("Data/worldwidecases.csv")
 ```
 
 ```{r}
-china_cass <- cases %>% 
+china <- cases %>% 
   filter(countriesAndTerritories == "China")
+
+australia <- cases %>% 
+  filter(countriesAndTerritories == "Australia")
+
+china
+australia
+```
+
+
 
