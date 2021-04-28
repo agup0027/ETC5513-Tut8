@@ -47,29 +47,6 @@ library(bookdown)
 ```
 
 
-
-<<<<<<< HEAD
-\section*{Country XX1 and YY1"}
-
-\section*{Country XX2 and YY2}
-
-library(readr)
-worldwidecases <- read_csv("Data/worldwidecases.csv")
-View(worldwidecases)
-
-```{r}
-Brazil <- worldwidecases %>% 
-  filter(countriesAndTerritories == "Brazil")
-
-unique(worldwidecases$countriesAndTerritories)
-
-France <- worldwidecases %>% 
-  filter(countriesAndTerritories == "France")
-
-```
-
-
-=======
 \section*{Country XX1 and YY1}
 
 ```{r ,warning=FALSE,message=FALSE}
@@ -87,7 +64,21 @@ barbados_cases %>%
 This is the data
 
 \section*{Country XX2 and YY2}
->>>>>>> smriti
+
+library(readr)
+worldwidecases <- read_csv("Data/worldwidecases.csv")
+View(worldwidecases)
+
+```{r}
+Brazil <- worldwidecases %>% 
+  filter(countriesAndTerritories == "Brazil")
+
+unique(worldwidecases$countriesAndTerritories)
+
+France <- worldwidecases %>% 
+  filter(countriesAndTerritories == "France")
+
+```
 
 \section*{Country XX3 and YY3}
 
