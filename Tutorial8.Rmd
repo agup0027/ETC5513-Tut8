@@ -48,6 +48,7 @@ library(bookdown)
 
 
 
+<<<<<<< HEAD
 \section*{Country XX1 and YY1"}
 
 \section*{Country XX2 and YY2}
@@ -68,6 +69,25 @@ France <- worldwidecases %>%
 ```
 
 
+=======
+\section*{Country XX1 and YY1}
+
+```{r ,warning=FALSE,message=FALSE}
+worldwide_cases <- read_csv("data/worldwidecases.csv")
+```
+```{r ,warning=FALSE,message=FALSE}
+barbados_cases <- worldwide_cases %>%
+  filter(countriesAndTerritories=="Barbados") %>%
+  group_by(month,year) %>%
+  summarise(n = sum(cases))
+
+barbados_cases %>%
+  ggplot(aes(x=month,y=n)) + geom_line()
+```
+This is the data
+
+\section*{Country XX2 and YY2}
+>>>>>>> smriti
 
 \section*{Country XX3 and YY3}
 
